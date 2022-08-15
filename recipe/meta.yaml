@@ -1,4 +1,4 @@
-{% set version = "2.7" %}
+{% set version = "2.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ontologyIndex_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ontologyIndex/ontologyIndex_{{ version }}.tar.gz
-  sha256: 33f4918cafb983635f9f831553daf15e10103dc375475e170f104a8eaf0e7048
+  sha256: ba1d22ecc206364b92e8ec21d0621f0253c5cebd03f8407abfd9577abe6a490f
 
 build:
   merge_build_host: true  # [win]
@@ -35,10 +35,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=ontologyIndex
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: "Functions for reading ontologies into R as lists and manipulating sets of ontological terms - 'ontologyX: A suite of R packages for working with ontological data', Greene et al 2017 <doi:10.1093/bioinformatics/btw763>."
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
