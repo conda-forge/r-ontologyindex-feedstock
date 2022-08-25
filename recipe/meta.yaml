@@ -1,4 +1,4 @@
-{% set version = "2.9" %}
+{% set version = "2.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ontologyIndex_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ontologyIndex/ontologyIndex_{{ version }}.tar.gz
-  sha256: ba1d22ecc206364b92e8ec21d0621f0253c5cebd03f8407abfd9577abe6a490f
+  sha256: c995d6d9df5ff9cfb81fb80f553fc0f392d2237ffa6dd8619fd8fbce745a3a42
 
 build:
   merge_build_host: true  # [win]
