@@ -1,4 +1,4 @@
-{% set version = "2.10" %}
+{% set version = "2.11" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ontologyIndex_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ontologyIndex/ontologyIndex_{{ version }}.tar.gz
-  sha256: c995d6d9df5ff9cfb81fb80f553fc0f392d2237ffa6dd8619fd8fbce745a3a42
+  sha256: 27f12d5b6e2cb9d0a68841a7298a2b6b21d3567a178e751f406991b336decd9e
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
