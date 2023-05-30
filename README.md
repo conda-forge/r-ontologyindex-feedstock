@@ -1,11 +1,11 @@
-About r-ontologyindex
-=====================
+About r-ontologyindex-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ontologyindex-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=ontologyIndex
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ontologyindex-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions for reading ontologies into R as lists and manipulating sets of ontological terms - 'ontologyX: A suite of R packages for working with ontological data', Greene et al 2017 <doi:10.1093/bioinformatics/btw763>.
 
